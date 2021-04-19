@@ -1,0 +1,31 @@
+{
+  "name": "docs.abaplint.app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "docs.abaplint.app",
+  "main": "index.js",
+  "scripts": {
+    "links": "find src -name \\*.adoc | xargs -n1 asciidoc-link-check -p",
+    "asciidoc": "asciidoctor-web-pdf -r asciidoctor-plantuml -r asciidoctor-kroki -d book -D public src/index.adoc",
+    "test": "rm -rf public/ && npm run links && npm run asciidoc && npm run copy",
+    "copy": "cp src/redirect.html public/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heliconialabs/docs.abaplint.app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heliconialabs/docs.abaplint.app/issues"
+  },
+  "homepage": "https://github.com/heliconialabs/docs.abaplint.app#readme",
+  "dependencies": {
+    "@asciidoctor/cli": "^3.4.0",
+    "@asciidoctor/core": "^2.2.3",
+    "asciidoc-link-check": "^1.0.15",
+    "asciidoctor-kroki": "^0.12.0",
+    "asciidoctor-pdf": "^1.0.0-alpha.12",
+    "asciidoctor-plantuml": "^1.5.0"
+  }
+}
