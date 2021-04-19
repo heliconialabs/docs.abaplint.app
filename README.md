@@ -1,2 +1,3 @@
 # docs.abaplint.app
-docs.abaplint.app
+
+https://docs.abaplint.app

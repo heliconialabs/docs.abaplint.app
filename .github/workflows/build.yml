@@ -1,0 +1,27 @@
+name: Coverage
+
+on: [push]
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '12.x'
+    - name: Run npm steps
+      run: |
+        npm install
+        npm test
+    - name: Update build branch
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main' && github.repository == 'heliconialabs/docs.abaplint.app'
+      with:
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        publish_branch: build
+        force_orphan: true
+        publish_dir: ./public

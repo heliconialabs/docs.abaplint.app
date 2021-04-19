@@ -7,6 +7,18 @@ Documentation
 :toclevels: 3
 :numbered:
 
+[cols="1,3",frame=none,grid=none]
+|===
+|Home
+|link:https://github.com/heliconialabs/docs.abaplint.app[https://github.com/heliconialabs/docs.abaplint.app]
+
+|License
+|link:https://github.com/heliconialabs/docs.abaplint.app/blob/main/LICENSE[Creative Commons]
+
+|Build
+|{docdatetime}
+|===
+
 == Requirements
 test
 
