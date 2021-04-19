@@ -1,0 +1,25 @@
+h1, h2, h3, h4, #toctitle {
+  font-family: sans-serif;
+  font-weight: bold !important;
+}
+
+html, body, [data-id="toc"] ul {
+  font-family: sans-serif !important;
+}
+
+/* disable zebra stripes */
+table tr.even, table tr.alt, table tr:nth-of-type(even) {
+  background: unset
+}
+
+@page:left {
+  @bottom-right {
+    content: "Page " counter(page);
+  }
+}
+
+@page:right {
+  @bottom-left {
+    content: "Page " counter(page);
+  }
+}
