@@ -35,7 +35,7 @@ The latest version of link:https://abapgit.org[abapGit] is required for serializ
 
 abaplint.app is automatically triggered for each commit or when a pull request is opened.
 
-== Configuration
+== Rule Configuration
 
 abaplint is configured via a file `/abaplint.json` in the git repository, if no configuration file is present, the default configuration is used, which have all rules enabled.
 
@@ -47,3 +47,11 @@ link:https://rules.abaplint.org[rules.abaplint.org] lists and documents all rule
 
 == ATC/SCI Integration
 The ABAP developer can check the working copy in the ABAP system via link:https://github.com/abaplint/abaplint-sci-client[abaplint-sci-client]
+
+== Observations
+
+Observations are run only in the context of a pull request, and reports only "success" or "neutral" run status, so it will not block merges in case of link:https://docs.github.com/en/github/administering-a-repository/defining-the-mergeability-of-pull-requests/about-protected-branches#require-status-checks-before-merging[required checks].
+
+Implementation of observations is currently work in progress, and progress and impact can be seen in each pull request.
+
+Like abaplint rules, there are multiple observations which can be enabled and disabled, these will be described in this document as implementation proceeds.

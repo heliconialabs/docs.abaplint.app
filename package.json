@@ -22,7 +22,7 @@
   "homepage": "https://github.com/heliconialabs/docs.abaplint.app#readme",
   "dependencies": {
     "@asciidoctor/cli": "^3.4.0",
-    "@asciidoctor/core": "^2.2.3",
+    "@asciidoctor/core": "^2.2.4",
     "asciidoc-link-check": "^1.0.15",
     "asciidoctor-kroki": "^0.12.0",
     "asciidoctor-pdf": "^1.0.0-alpha.12",
