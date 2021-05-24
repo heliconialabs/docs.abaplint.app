@@ -1,9 +1,9 @@
-name: Coverage
+name: build
 
 on: [push]
 
 jobs:
-  coverage:
+  build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
