@@ -1,5 +1,6 @@
 :plantuml-server-url: https://www.plantuml.com/plantuml
 :source-highlighter: highlightjs
+:title-logo-image: image:./src/app.svg
 
 = abaplint.app
 Documentation
@@ -20,7 +21,7 @@ Documentation
 |===
 
 == Introduction
-abaplint.app is a cloud based tool for helping ABAP developers develop ABAP abap. The app can be used for static analysis and continious integration, providing multiple configurable rules to support any development guidelines.
+abaplint.app is a cloud based tool for helping ABAP developers develop ABAP. The app can be used for static analysis and continuous integration, providing multiple configurable rules to support any development guidelines.
 
 === Requirements
 A GitHub user or organization is required for use with the abaplint.app.
