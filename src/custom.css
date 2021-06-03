@@ -26,8 +26,8 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
 
 /* logo on frontpage */
 @page :first {
-  background-size: 30%;
-  background-position: 40% 50%;
+  background-size: 25%;
+  background-position: 35% 50%;
   background-repeat: no-repeat;
   background-image: url("./app.svg");
 }
