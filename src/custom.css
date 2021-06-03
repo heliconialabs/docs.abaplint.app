@@ -29,5 +29,10 @@ table tr.even, table tr.alt, table tr:nth-of-type(even) {
   background-size: 25%;
   background-position: 35% 50%;
   background-repeat: no-repeat;
-  background-image: url("./app.svg");
+  background-image: url("./img/app.svg");
+}
+
+img {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
 }
