@@ -1,0 +1,40 @@
+== Insights
+
+Various code insights are automatically generated daily by abaplint.app, insights can be accessed via web.
+Insights for public projects are public, users must login to access insights for private projects.
+All insights are generated only for the default branch.
+
+=== Issues
+abaplint is run for the source code, if no configuration is present, the default configuration is used.
+Issues are listed, plus a graph gives an overview, issues with quick-fixes are shown in green,
+
+image::img/issues.png[]
+
+=== Method Length
+Method length gives an overview of the method implementation lengths across the source code.
+Note that the scale is logarithmic,
+
+image::img/method_length.png[]
+
+=== Statement Compatibility
+Statement parsing id performed against different language versions, this gives an overview of effort
+required to downport or upport the codebase.
+
+image::img/statement_compatibility.png[]
+
+=== Void Types
+Lists void types and locations.
+
+=== Dependencies
+Lists where dependencies are sued in the codebase. Dependencies are configured in the `abaplint.json` file
+
+=== Package Coupling
+Work in progress
+
+=== UML Class Diagrams
+Provides auto generated UML diagrams for all global classes and interfaces, example:
+
+image::img/uml.svg[]
+
+=== Disabled Rules
+If rules are disabled in the configuration, abaplint.app will try to enable to rule and provide the issue count and how much is quick-fixable.

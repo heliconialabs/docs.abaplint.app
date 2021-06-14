@@ -49,6 +49,14 @@ link:https://rules.abaplint.org[rules.abaplint.org] lists and documents all rule
 == ATC/SCI Integration
 The ABAP developer can check the working copy in the ABAP system via link:https://github.com/abaplint/abaplint-sci-client[abaplint-sci-client]
 
+<<<<
+
 include::observations.adoc[]
 
+<<<<
+
 include::suggestions.adoc[]
+
+<<<<
+
+include::insights.adoc[]

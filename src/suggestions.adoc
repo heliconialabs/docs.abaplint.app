@@ -1,5 +1,5 @@
 == Suggestions
 
-Suggestions by abaplint.app appear in pull requests, rules which have quickfixes must be enabled, and only one suggestion appear at a time.
+Suggestions by abaplint.app appear in pull requests, rules which have quick-fixes must be enabled, and only one suggestion appear at a time.
 
 image::img/suggestion.svg[]
