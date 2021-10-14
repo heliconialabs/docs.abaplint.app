@@ -6,6 +6,8 @@ image::img/observation_overview.svg[]
 
 If there are zero observations the step reports success, if some are found it reports the neutral status. A neutral status is shown in the pull request, which help s the reviewer to identify and check the observations.
 
+For running examples see pull requests for the following repositories, link:https://github.com/heliconialabs?q=observation[https://github.com/heliconialabs?q=observation]
+
 === New void type used
 
 If abaplint is configured with `errorNamespace` some types are trusted by abaplint to be correct in all uses, these types are called void types.
@@ -13,3 +15,15 @@ If abaplint is configured with `errorNamespace` some types are trusted by abapli
 This observation reports findings if new void types are introduced by the pull request, this helps identifying if the footprint towards eg. dependencies or the standard system increases.
 
 image::img/observation_void.svg[]
+
+=== DB field changed
+
+Changing structures, data elements or domains can cause transparent database tables to be changed, this observation helps making these changes visible to reviewers.
+
+This observation is reported if:
+
+* If the type of a field is changed
+* If a field is added
+* If a field is removed
+
+image::img/observation_db_field_changed.svg[]
