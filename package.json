@@ -8,7 +8,7 @@
     "links": "find src -name \\*.adoc | xargs -n1 asciidoc-link-check -p",
     "asciidoc": "asciidoctor-web-pdf -r asciidoctor-plantuml -r asciidoctor-kroki -d book -D public src/index.adoc -a stylesheet=\"asciidoctor-pdf/css/asciidoctor.css,asciidoctor-pdf/css/document.css,asciidoctor-pdf/css/features/title-page.css,custom.css\"",
     "test": "rm -rf public/ && npm run links && npm run asciidoc && npm run copy",
-    "copy": "cp redirect.html public/index.html && mv public/index.pdf public/abaplint-app-documentation.pdf"
+    "copy": "cp redirect.html public/index.html && cp favicon.ico public/favicon.ico && mv public/index.pdf public/abaplint-app-documentation.pdf"
   },
   "repository": {
     "type": "git",
