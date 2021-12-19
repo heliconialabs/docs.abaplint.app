@@ -36,15 +36,7 @@ The latest version of link:https://abapgit.org[abapGit] is required for serializ
 
 abaplint.app is automatically triggered for each commit or when a pull request is opened.
 
-== Rule Configuration
-
-abaplint is configured via `/abaplint.json` in the git repository, if no configuration file is present, the default configuration is used, which have all rules enabled.
-
-The default configuration can be found on link:https://playground.abaplint.org[playground.abaplint.app], which can also help to test different configuration and findings.
-
-If editing the configuration file via link:https://marketplace.visualstudio.com/items?itemName=larshp.vscode-abaplint[vscode abaplint extension], the editor will know the format of the json configuration file and help discovering and updating rule configuration.
-
-link:https://rules.abaplint.org[rules.abaplint.org] lists and documents all rules which can be configured.
+include::configuration.adoc[]
 
 == ATC/SCI Integration
 The ABAP developer can check the working copy in the ABAP system via link:https://github.com/abaplint/abaplint-sci-client[abaplint-sci-client]

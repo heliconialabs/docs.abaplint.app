@@ -1,0 +1,56 @@
+== Rule Configuration
+
+abaplint is configured via `/abaplint.json` in the git repository, if no configuration file is present, the default configuration is used, which have all rules enabled.
+
+The default configuration can be found on link:https://playground.abaplint.org[playground.abaplint.app], or by running `abaplint -d`on command line.
+
+If editing the configuration file via link:https://marketplace.visualstudio.com/items?itemName=larshp.vscode-abaplint[vscode abaplint extension], the editor will know the format of the json configuration file and help discovering and updating rule configurations.
+
+link:https://rules.abaplint.org[rules.abaplint.org] lists and documents all rules which can be configured.
+
+== App Configuration
+
+A file with one of the following filenames can optionally be placed in the root of the git directory,
+
+* `abaplint-app.json`
+* `abaplint-app.jsonc`
+* `abaplint-app.json5`
+
+Only the first file found will be taken into account.
+
+The file can be used to configure abaplint.app features. The corresponding schema can be accessed at https://schema.abaplint.app/schema.json.
+
+=== Multiple Configurations
+
+By adding a `abaplint-app.json` file it is possible to have abaplint.app run multiple abaplint configurations. link:#_observations[Observations] and link:#_suggestions[suggestions] are reported only for the first configuration. Configurations are processed in the sequence as defined in the file,
+
+[source,json]
+----
+{
+  "configurations": {
+    "default": {
+      "filename": "./abaplint.jsonc"
+    },
+    "v740sp05": {
+      "filename": "./abaplintonprem.jsonc"
+    }
+  }
+}
+----
+
+When running with the above configuration, abaplint.app also analyzes the source code using `abaplintonprem.jsonc` and issues the result as "abaplint / v740sp05",
+
+image::img/multiple_config.svg[]
+
+=== Experimental Features
+
+Experimental features are disabled by default, but can be enabled by setting
+
+[source,json]
+----
+{
+  "experimentalFeatures": true
+}
+----
+
+These features change over time and are only documented when the feature becomes generally available.
