@@ -1,5 +1,15 @@
 == Configuration
 
+=== Repository Access
+
+The administrator of a GitHub organization controls which repositories that abaplint.app can access via https://github.com/apps/abaplint/installations/new.
+
+Only grant access to repositories where abaplint.app will be used,
+
+image::img/repo_access.png[]
+
+Administrators can revoke or grant additional repository access at any time, note that the app permissions are limited to read and updating information in pull requests.
+
 === Rule Configuration
 
 abaplint is configured via `/abaplint.json` in the git repository, if no configuration file is present, the default configuration is used, which have all rules enabled.
