@@ -1,0 +1,13 @@
+== Annotations
+
+After installation and configuration of abaplint.app, it will report findings for each commit.
+
+image::img/checks_overview3.svg[]
+
+If issues are found, the "Details" link can be clicked, and the developer can check the findings directly in the pull request,
+
+image::img/checks_annotation.svg[]
+
+Annotations are updated after each push, and links directly to the branch which contains the change.
+
+Additional information regarding the specific rules can be looked up on https://rules.abaplint.org

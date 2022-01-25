@@ -28,7 +28,7 @@ include::configuration.adoc[]
 
 <<<<
 
-include::atc.adoc[]
+include::annotations.adoc[]
 
 <<<<
 
@@ -41,3 +41,7 @@ include::suggestions.adoc[]
 <<<<
 
 include::insights.adoc[]
+
+<<<<
+
+include::atc.adoc[]
