@@ -66,3 +66,39 @@ Experimental features are disabled by default, but can be enabled by setting
 ----
 
 These features change over time and are only documented when the feature becomes generally available.
+
+=== Dependent GitHub Actions
+
+abaplint.app helps with static analysis, the next step in a CI pipeline is typically to run the unit tests.
+Github Actions can be used to trigger any logic after the static analysis completes.
+
+Template and working example can be found at https://github.com/heliconialabs/abaplint-app-dependent-action
+
+Example Github Action configuration,
+
+[source,yml]
+----
+name: unit
+
+on:
+  pull_request
+
+jobs:
+  wait:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+     - name: Wait for other checks to succeed
+       uses: lewagon/wait-on-check-action@v1.1.1
+       with:
+         ref: ${{ github.event.pull_request.head.sha }}
+         check-name: abaplint
+         repo-token: ${{ secrets.GITHUB_TOKEN }}
+         wait-interval: 1
+  unit:
+    needs: wait
+    runs-on: ubuntu-latest
+    steps:
+    - name: Echo github context
+      run: echo '${{ toJson(github.event) }}' || true
+----
