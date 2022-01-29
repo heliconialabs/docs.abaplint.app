@@ -24,6 +24,6 @@
     "@asciidoctor/core": "^2.2.6",
     "asciidoc-link-check": "^1.0.15",
     "asciidoctor-kroki": "^0.15.4",
-    "asciidoctor-pdf": "1.0.0-alpha.14"
+    "asciidoctor-pdf": "^1.0.0-alpha.14"
   }
 }
