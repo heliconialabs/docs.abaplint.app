@@ -38,3 +38,8 @@ image::img/uml.svg[]
 
 === Disabled Rules
 If rules are disabled in the configuration, abaplint.app will try to enable to rule and provide the issue count and how much is quick-fixable.
+
+=== Repository Relations
+Dependencies from the abaplint configuration file is listed,
+
+image::img/repo_relations.svg[]

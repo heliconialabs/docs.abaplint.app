@@ -25,5 +25,7 @@ This observation is reported if:
 * If the type of a field is changed
 * If a field is added
 * If a field is removed
+* If a key field is added
+* If a key field is removed
 
 image::img/observation_db_field_changed.svg[]
