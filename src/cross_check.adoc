@@ -1,5 +1,13 @@
 == Cross Check
 
-todo
+Some applications consists of multiple components maintained by different teams. This abaplint.app feature allows to discover syntax errors across repositories before changes are merged, so that fixes can be prepared in due time.
+
+All repository relations and branches are found and checked one by one. If the checked already have errors, it is skipped.
+
+Public repositories consider only public dependencies, private will take repositories in the same organization into account.
+
+The cross check feature can be disabled in `abaplint-app.json`
+
+If there are no errors found, success is reported as a status check on the pull request. In case of new errors, a neutral status is reported, click the link from the status check to see the overview of the results,
 
 image::img/cross_check.svg[]
