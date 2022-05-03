@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "docs.abaplint.app",
   "scripts": {
-    "links": "find src -name \\*.adoc | xargs -n1 asciidoc-link-check -p",
+    "links": "find src -name \\*.adoc | xargs -n1 asciidoc-link-check -c asciidoc-link-check-config.json -p",
     "asciidoc": "asciidoctor-web-pdf -r asciidoctor-kroki -d book -D public src/index.adoc -a stylesheet=\"asciidoctor-pdf/css/asciidoctor.css,asciidoctor-pdf/css/document.css,asciidoctor-pdf/css/features/title-page.css,custom.css\"",
     "svgo": "svgo -f ./src/img",
     "test": "rm -rf public/ && npm run links && npm run asciidoc && npm run copy",
