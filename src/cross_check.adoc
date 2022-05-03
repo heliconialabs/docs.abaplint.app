@@ -16,7 +16,7 @@ image::img/cross_check.svg[]
 
 A pull request is opened in "Repository 1", which have two dependent repositories: A and B,
 
-image::img/cross_check_diagram.drawio.svg[]
+image::img/cross_check_diagram.drawio.svg[Diagram]
 
 The pull request will cross check all combinations,
 
