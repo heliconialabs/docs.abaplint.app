@@ -67,6 +67,17 @@ Experimental features are disabled by default, but can be enabled by setting
 
 These features change over time and are only documented when the feature becomes generally available.
 
+==== Allowing no artifacts
+
+By default, abaplint.app will report an error if no ABAP artifacts are found, this error can be disabled with:
+
+[source,json]
+----
+{
+  "noArtifactsOkay": true
+}
+----
+
 === Dependent GitHub Actions
 
 abaplint.app helps with static analysis, the next step in a CI pipeline is typically to run the unit tests.
