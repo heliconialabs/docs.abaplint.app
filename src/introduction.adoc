@@ -5,11 +5,14 @@ abaplint.app is a cloud based tool for helping ABAP developers develop ABAP. The
 A GitHub user or organization is required for use with the abaplint.app.
 The latest version of link:https://abapgit.org[abapGit] is required for serializing the ABAP artifacts, abapGit works on SAP_BASIS 702 and up.
 
+=== Support
+Users with paid plans can contact support@abaplint.app with questions, bugs and feature requests.
+
 == Quick Start
 
 . link:https://github.com/join[Create GitHub User or Organization]
 . link:https://github.com/marketplace/abaplint[Install the app from the marketplace]
 . link:https://docs.abapgit.org/guide-install.html[Install abapGit in the ABAP system]
-. Push ABAP code to GitHub via abapGit
+. link:https://docs.abapgit.org/guide-stage-commit.html[Push ABAP code to GitHub via abapGit]
 
-abaplint.app is automatically triggered for each commit or when a pull request is opened.
+abaplint.app is automatically triggered for each commit, or when a pull request is opened.
