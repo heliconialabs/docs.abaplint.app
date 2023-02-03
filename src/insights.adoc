@@ -31,7 +31,7 @@ Lists where dependencies are sued in the codebase. Dependencies are configured i
 === Package Coupling
 Given a folder(package) the diagram lists objects and packages using something in the package on the left side. The right side lists what is being used from the package.
 
-Test class includes and dependencies are ignored.
+Test class includes and dependencies are ignored. Dependencies into sub-folders are shown with blue background.
 
 image::img/package_coupling.svg[]
 
