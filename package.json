@@ -24,7 +24,7 @@
     "@asciidoctor/cli": "^3.5.0",
     "@asciidoctor/core": "^2.2.6",
     "asciidoc-link-check": "^1.0.15",
-    "asciidoctor-kroki": "^0.16.0",
+    "asciidoctor-kroki": "^0.17.0",
     "asciidoctor-pdf": "1.0.0-alpha.16",
     "svgo": "^3.0.2"
   }

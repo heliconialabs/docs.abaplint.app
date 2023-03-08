@@ -45,7 +45,3 @@ include::insights.adoc[]
 <<<<
 
 include::cross_check.adoc[]
-
-<<<<
-
-include::atc.adoc[]

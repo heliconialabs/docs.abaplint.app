@@ -23,7 +23,9 @@ required to downport or upport the codebase.
 image::img/statement_compatibility.png[]
 
 === Void Types
-Lists void types and locations.
+Lists void types as per the `errorNamespace` configuration, along with release, deprecation and successor information.
+
+image::img/void_types.png[]
 
 === Dependencies
 Lists where dependencies are sued in the codebase. Dependencies are configured in the `abaplint.json` file
