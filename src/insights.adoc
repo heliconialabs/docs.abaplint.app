@@ -16,6 +16,9 @@ Note that the scale is logarithmic,
 
 image::img/method_length.png[]
 
+=== Method Complexity
+Overview of method complexity measured as cyclomatic complexity.
+
 === Statement Compatibility
 Statement parsing id performed against different language versions, this gives an overview of effort
 required to downport or upport the codebase.
