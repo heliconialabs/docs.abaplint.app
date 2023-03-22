@@ -10,9 +10,19 @@ Users with paid plans can contact support@abaplint.app with questions, bugs and 
 
 == Quick Start
 
+Perform the following steps to get started,
+
 . link:https://github.com/join[Create GitHub User or Organization]
 . link:https://github.com/marketplace/abaplint[Install the app from the marketplace]
 . link:https://docs.abapgit.org/guide-install.html[Install abapGit in the ABAP system]
 . link:https://docs.abapgit.org/guide-stage-commit.html[Push ABAP code to GitHub via abapGit]
 
 abaplint.app is automatically triggered for each commit, or when a pull request is opened.
+
+=== About Licensing
+
+Use in private/internal repositories requires a license purchased via link:https://github.com/marketplace/abaplint[GitHub Marketplace].
+
+Only active users pushing code requires licenses. Users are not named users ie. active users can change between each month with changes.
+
+The author email address from each commit is used to count users. Use link:https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/blocking-command-line-pushes-that-expose-your-personal-email-address[`noreply` email addresses] to protect the identity of users, and align the email addresses used.
