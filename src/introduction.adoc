@@ -19,6 +19,8 @@ Perform the following steps to get started,
 
 abaplint.app is automatically triggered for each commit, or when a pull request is opened.
 
+By default, abaplint will run all rules if there is no configuration found. Check the abaplint documentation for a link:https://github.com/abaplint/abaplint/blob/main/docs/getting_started.md#starting-on-premise-configuration[minimal syntax checking configuration].
+
 === About Licensing
 
 Use in private/internal repositories requires a license purchased via link:https://github.com/marketplace/abaplint[GitHub Marketplace].
