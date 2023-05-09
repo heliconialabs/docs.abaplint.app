@@ -52,3 +52,8 @@ If rules are disabled in the configuration, abaplint.app will try to enable to r
 Dependencies from the abaplint configuration file is listed,
 
 image::img/repo_relations.svg[]
+
+=== Lines over time
+Show codebase size over time,
+
+image::img/lines_over_time.png[]
