@@ -53,7 +53,17 @@ Dependencies from the abaplint configuration file is listed,
 
 image::img/repo_relations.svg[]
 
-=== Lines over time
+=== Lines Over Time
 Show codebase size over time,
 
 image::img/lines_over_time.png[]
+
+=== Unit Tests
+Show number of unit tests over time,
+
+image::img/unit_tests.png[]
+
+=== Lines vs Unit Tests
+Show number of lines compared to number of unit tests over time,
+
+image::img/lines_vs_tests.png[]
