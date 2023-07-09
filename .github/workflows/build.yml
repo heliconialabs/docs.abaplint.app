@@ -9,10 +9,10 @@ jobs:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
       with:
-        node-version: '16'
+        node-version: '20'
     - name: Run npm steps
       run: |
-        npm install
+        npm ci
         npm test
     - name: Update build branch
       uses: peaceiris/actions-gh-pages@v3
