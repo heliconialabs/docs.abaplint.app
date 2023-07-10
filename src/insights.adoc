@@ -67,3 +67,13 @@ image::img/unit_tests.png[]
 Show number of lines compared to number of unit tests over time,
 
 image::img/lines_vs_tests.png[]
+
+=== Average Complexity
+Show average cyclomatic complexity over time
+
+image::img/average_complexity.png[]
+
+=== Average Method Length
+Show average method length over time, measured in number of statements
+
+image::img/average_method_length.png[]
