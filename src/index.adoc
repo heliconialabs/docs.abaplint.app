@@ -40,6 +40,10 @@ include::suggestions.adoc[]
 
 <<<<
 
+include::target_rules.adoc[]
+
+<<<<
+
 include::insights.adoc[]
 
 <<<<

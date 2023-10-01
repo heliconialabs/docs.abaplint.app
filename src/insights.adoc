@@ -77,3 +77,7 @@ image::img/average_complexity.png[]
 Show average method length over time, measured in number of statements
 
 image::img/average_method_length.png[]
+
+=== Target Rules
+
+See the Target Rules chapter

@@ -29,3 +29,7 @@ This observation is reported if:
 * If a key field is removed
 
 image::img/observation_db_field_changed.svg[]
+
+=== Target Rules
+
+Rules configured as `targetRules` will show up as observations, see the chapter on Target Rules.
