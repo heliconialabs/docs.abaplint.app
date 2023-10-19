@@ -81,3 +81,14 @@ image::img/average_method_length.png[]
 === Target Rules
 
 See the Target Rules chapter
+
+=== Class Length
+
+Find the latest classes in the codebase, these are good candidates for refactoring.
+
+=== Intra Class Call Graph
+
+Display relations between methods internally in a class. The diagram does not reflect sequence, only if a method is called from another method.
+Only static method references are displayed.
+
+image::img/call_graph.svg[]
