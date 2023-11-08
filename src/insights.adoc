@@ -92,3 +92,10 @@ Display relations between methods internally in a class. The diagram does not re
 Only static method references are displayed.
 
 image::img/call_graph.svg[]
+
+=== Object Types
+
+Overview of how many objects of each type exists in the repository.
+Cloud indicates the object type is possible in ABAP Cloud, not that the actual object contents works in ABAP Cloud.
+
+image::img/objecttypes.png[]
