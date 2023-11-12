@@ -33,3 +33,9 @@ image::img/observation_db_field_changed.svg[]
 === Target Rules
 
 Rules configured as `targetRules` will show up as observations, see the chapter on Target Rules.
+
+=== Parallel File Changes
+
+If identical file names are changed in more than one open pull request is reported it will trigger an observation.
+
+Git will do its best to merge the changes, however it can be troublesome to deploy these changes to the landscape simultaneously.
