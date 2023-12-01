@@ -99,3 +99,9 @@ Overview of how many objects of each type exists in the repository.
 Cloud indicates the object type is possible in ABAP Cloud, not that the actual object contents works in ABAP Cloud.
 
 image::img/objecttypes.png[]
+
+=== Procedural vs OO
+
+Number of statements in FORM + FUNCTION compared to number of statements in METHOD implementations
+
+image::img/proceduralvsoo.png[]
