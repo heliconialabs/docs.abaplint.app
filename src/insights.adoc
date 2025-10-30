@@ -105,3 +105,15 @@ image::img/objecttypes.png[]
 Number of statements in FORM + FUNCTION compared to number of statements in METHOD implementations
 
 image::img/proceduralvsoo.png[]
+
+=== Table Accesses
+
+Gives an easy overview of which database tables are accessed throughout the codebase.
+
+=== API Usage
+
+Lists usage of various SAP provided APIs throughout the codebase. Along with their public, private and steampunk status, successors and suggested successors are also listed.
+
+=== Object Classifications
+
+Overview of Clean Core classifications, use this to identify and improve code that is not Clean Core compliant.
