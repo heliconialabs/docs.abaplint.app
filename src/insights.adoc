@@ -58,6 +58,10 @@ Show codebase size over time,
 
 image::img/lines_over_time.png[]
 
+=== Inheritance over time
+
+Show inheritance usage over time.
+
 === Unit Tests
 Show number of unit tests over time,
 

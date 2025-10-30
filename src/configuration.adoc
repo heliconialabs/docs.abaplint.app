@@ -78,6 +78,35 @@ By default, abaplint.app will report an error if no ABAP artifacts are found, th
 }
 ----
 
+==== Run merge check
+
+[NOTE]
+Experimental, this is work in progress and may change or be removed without notice.
+
+When enabled, abaplint.app will analyze the code as it would look like after merging the pull request into the target branch.
+This is will give results in pending pull requests, running the checks without the branches having to be up to date.
+
+[source,json]
+----
+{
+  "mergeCheck": true
+}
+----
+
+==== Incremental mode
+
+[NOTE]
+Experimental, this is work in progress and may change or be removed without notice.
+
+When enabled, abaplint.app will only analyze files changed in the pull request. This can be used to speed up the analysis for large repositories with many files. And useful for repositories with high number of legacy issues, where only new or changed files should be analyzed.
+
+[source,json]
+----
+{
+  "incremental": true
+}
+----
+
 === Dependent GitHub Actions
 
 abaplint.app helps with static analysis, the next step in a CI pipeline is typically to run the unit tests.
