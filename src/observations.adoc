@@ -39,3 +39,9 @@ Rules configured as `targetRules` will show up as observations, see the chapter 
 If identical file names are changed in more than one open pull request is reported it will trigger an observation.
 
 Git will do its best to merge the changes, however it can be troublesome to deploy these changes to the landscape simultaneously.
+
+=== Function module type changed or deleted
+
+If a update or remote function module is deleted, an observation is reported.
+
+Or if its changed from update or remote to normal function module.

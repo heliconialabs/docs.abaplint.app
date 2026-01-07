@@ -54,7 +54,7 @@ Dependencies from the abaplint configuration file is listed,
 image::img/repo_relations.svg[]
 
 === Lines Over Time
-Show codebase size over time,
+Show codebase size over time, including ABAP and CDS code.
 
 image::img/lines_over_time.png[]
 

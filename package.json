@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/heliconialabs/docs.abaplint.app.git"
   },
-  "author": "",
+  "author": "Heliconia Labs ApS",
   "license": "Attribution 4.0 International",
   "bugs": {
     "url": "https://github.com/heliconialabs/docs.abaplint.app/issues"
