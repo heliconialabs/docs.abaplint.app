@@ -121,3 +121,7 @@ Lists usage of various SAP provided APIs throughout the codebase. Along with the
 === Object Classifications
 
 Overview of Clean Core classifications, use this to identify and improve code that is not Clean Core compliant.
+
+=== Tree Map, Lines of Code
+
+Visual representation of lines of code per package in the repository. The larger the box, the more lines of code in that package. This can be used to identify large packages that may need refactoring.
